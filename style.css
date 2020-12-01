@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  position: fixed;
+  background: #000;
+  width: 100%;
+  z-index: 10;
+}
+header nav #check {
+  display: none;
+}
+header nav .checkbtn {
+  font-size: 20px;
+  color: #fff;
+  float: right;
+  line-height: 110px;
+  margin-right: 50px;
+  cursor: pointer;
+  display: none;
+}
+header nav .logo {
+  padding: 21px 35px 34px 80px;
+  float: left;
+}
+header nav ul {
+  float: left;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 50px 0px 34px 0px;
+}
+header nav ul li a {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+header nav ul li a:hover, header nav ul li a :active {
+  background: #1a2a4e;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #42768f;
+}
+header nav ul .search {
+  margin-left: 480px;
+}
+header nav ul .search input {
+  width: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 4px 10px 2px 30px;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 300;
+}
+header nav ul .search span {
+  margin-right: 80px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+main {
+  padding-top: 110px;
+}
+main .slider {
+  background-image: url("image/slider1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+main .slider .slider_1 {
+  padding: 210px 490px 0px 416px;
+}
+main .slider .slider_1 h1 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+main .slider .slider_1 button {
+  width: 150px;
+  margin: 55px 0px 100px 342px;
+  padding: 20px 33px;
+  background: #000;
+  border: 0px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+main .slider .slider_1 button:active {
+  background-color: #42768f;
+  color: #000;
+  border: 0px;
+}
+main .snowboards {
+  background: #e8e8e8;
+  text-align: center;
+  padding: 100px 0px 120px 0px;
+}
+main .snowboards .snowboard h1 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+main .snowboards .snowboard p {
+  padding: 33px 0px 33px 0px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+main .snowboards .snowboard img {
+  padding-bottom: 120px;
+}
+main .snowboards .sl_carousel_snow {
+  position: relative;
+}
+main .snowboards .sl_carousel_snow .slick-arrow {
+  position: absolute;
+  z-index: 1;
+}
+main .snowboards .sl_carousel_snow .slick-prev {
+  left: 30px;
+  width: 122px;
+  height: 227px;
+  opacity: 0.3;
+  background: url("image/prev.png");
+}
+main .snowboards .sl_carousel_snow .slick-prev:active {
+  opacity: 0.8;
+}
+main .snowboards .sl_carousel_snow .slick-next {
+  right: 30px;
+  width: 122px;
+  height: 227px;
+  opacity: 0.3;
+  background: url("image/next.png");
+}
+main .snowboards .sl_carousel_snow .slick-next:active {
+  opacity: 0.8;
+}
+main .snowboards .sl_carousel_snow .slick-prev::before, main .snowboards .sl_carousel_snow .slick-next::before {
+  content: '';
+}
+main .snowboards .sl_carousel_snow .sl_slide .sl_img {
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+main .snowboards .sl_carousel_snow .sl_slide .sl_text {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+main .snowboards .sl_carousel_snow .sl_slide .sl_text:active {
+  display: block;
+}
+main .company {
+  background-image: url("image/bg_image.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+main .company .bg_image h1 {
+  padding: 250px 750px 55px 220px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+main .company .bg_image h1 span {
+  font-size: 20px;
+}
+main .company .bg_image .position {
+  padding: 0px 570px 130px 220px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 2;
+}
+main .features {
+  background: #e8e8e8;
+  text-align: center;
+  padding-top: 125px;
+}
+main .features h1 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+main .features .features_cards {
+  padding: 90px 220px 135px 220px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .features .features_cards .features_card {
+  margin: 10px auto;
+  height: 163px;
+  width: 100%;
+}
+main .features .features_cards .features_card img:hover {
+  opacity: 0.3;
+}
+main .features .features_cards .features_card .desc {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
+  margin: 25px auto;
+  line-height: 2;
+}
+
+footer .footer_lists {
+  background: #000;
+  padding: 75px 220px 70px 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 2;
+}
+footer .footer_lists .footer_list {
+  width: 250px;
+}
+footer .footer_lists .footer_list p {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+footer .footer_lists .footer_list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer_lists .footer_list li a {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footer_lists .footer_list li a:hover {
+  color: #42768f;
+  border-bottom: 3px solid #1a2a4e;
+}
+footer .footer_lists .footer_list input {
+  padding: 15px 0px 15px 15px;
+  width: 175px;
+}
+footer .footer_lists .footer_list button {
+  padding: 15px 16px 16px 16px;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  border: 1px solid;
+  background-color: #c7c7c7;
+}
+footer .footer_lists .footer_list button:active {
+  background-color: #42768f;
+  color: #000;
+  border: 0px;
+}
+footer .footer_lists .footer_list .social {
+  width: 250px;
+  padding-top: 60px;
+}
+footer .footer_lists .footer_list .social img {
+  padding-right: 28px;
+}
+footer .region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 220px 50px 220px;
+  background: #000;
+}
+footer .region p, footer .region span {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+footer .region span {
+  margin-left: auto;
+}
+footer .region img {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 1347px) {
+  header nav ul .search {
+    margin-left: 380px;
+  }
+
+  main .slider .slider_1 {
+    padding: 180px 372px 0px 300px;
+  }
+  main .company .bg_image h1 {
+    padding: 250px 480px 55px 220px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 480px 50px 220px;
+  }
+  main .features .features_cards {
+    padding: 90px 100px 135px 100px;
+  }
+
+  footer .footer_lists {
+    padding: 75px 100px 70px 100px;
+  }
+  footer .region {
+    padding: 0px 100px 50px 100px;
+  }
+}
+@media screen and (max-width: 1236px) {
+  header nav ul .search {
+    margin-left: 290px;
+  }
+
+  main .slider .slider_1 {
+    padding: 165px 338px 0px 220px;
+  }
+  main .company .bg_image h1 {
+    padding: 110px 410px 55px 220px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 446px 50px 220px;
+  }
+}
+@media screen and (max-width: 1152px) {
+  header nav ul .search {
+    margin-left: 170px;
+  }
+
+  main .slider .slider_1 {
+    padding: 125px 276px 0px 220px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 390px 50px 220px;
+  }
+  main .features .features_cards {
+    padding: 90px 60px 135px 60px;
+  }
+
+  footer .footer_lists {
+    padding: 75px 60px 70px 60px;
+  }
+  footer .region {
+    padding: 0px 60px 50px 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav ul .search {
+    margin-left: 48px;
+  }
+
+  main .slider .slider_1 {
+    padding: 120px 352px 0px 140px;
+  }
+  main .slider .slider_1 h1 {
+    font-size: 70px;
+  }
+  main .slider .slider_1 button {
+    margin: 40px 0px 100px 285px;
+  }
+  main .company .bg_image h1 {
+    padding: 60px 350px 55px 140px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 360px 40px 140px;
+  }
+  main .features .features_cards {
+    padding: 20px 60px 135px 60px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+  }
+  main .features .features_cards .features_card {
+    margin: 45px auto;
+  }
+  main .features .features_cards .features_card .desc {
+    text-align: center;
+    margin: 25px auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  header nav #check:checked ~ ul {
+    left: 0;
+  }
+  header nav .checkbtn {
+    display: block;
+  }
+  header nav ul {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #1a2a4e;
+    top: 110px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header nav ul li {
+    display: block;
+    margin: 35px 0px 30px 0px;
+  }
+
+  main .slider .slider_1 {
+    padding: 88px 300px 0px 140px;
+  }
+  main .slider .slider_1 h1 {
+    font-size: 60px;
+  }
+  main .slider .slider_1 button {
+    margin: 40px 0px 100px 285px;
+  }
+  main .company .bg_image h1 {
+    padding: 50px 268px 35px 140px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 320px 30px 140px;
+    line-height: 1.6;
+  }
+
+  footer .footer_lists {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+  }
+  footer .footer_lists .footer_list {
+    padding-top: 25px;
+    width: 100%;
+  }
+  footer .footer_lists .footer_list nav {
+    width: 100%;
+  }
+  footer .footer_lists .footer_list .social {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 769px) {
+  main .slider .slider_1 {
+    padding: 48px 234px 0px 125px;
+  }
+  main .slider .slider_1 h1 {
+    font-size: 50px;
+  }
+  main .slider .slider_1 button {
+    margin: 40px 0px 80px 190px;
+    padding: 15px 25px;
+  }
+  main .company .bg_image h1 {
+    padding: 25px 130px 25px 125px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 130px 20px 125px;
+  }
+}
+@media screen and (max-width: 620px) {
+  main .slider .slider_1 {
+    padding: 45px 212px 0px 125px;
+  }
+  main .slider .slider_1 h1 {
+    font-size: 35px;
+  }
+  main .slider .slider_1 button {
+    margin: 40px 0px 50px 85px;
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+  main .snowboards .sl_text {
+    font-size: 18px;
+  }
+  main .snowboards .snowboard h1 {
+    font-size: 36px;
+  }
+  main .company .bg_image h1 {
+    padding: 25px 100px 25px 125px;
+    font-size: 30px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 80px 20px 125px;
+    font-size: 12px;
+  }
+  main .features h1 {
+    font-size: 36px;
+  }
+  main .features .features_cards {
+    grid-template-columns: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  footer .footer_lists {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .slider .slider_1 {
+    padding: 46px 143px 0px 85px;
+  }
+  main .slider .slider_1 h1 {
+    font-size: 35px;
+  }
+  main .slider .slider_1 button {
+    width: 110px;
+    margin: 15px 0px 50px 0px;
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  main .company .bg_image h1 {
+    padding: 15px 50px 15px 65px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 15px 20px 65px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .slider .slider_1 {
+    padding: 30px 140px 0px 80px;
+  }
+  main .slider .slider_1 h1 {
+    font-size: 30px;
+  }
+  main .slider .slider_1 button {
+    width: 110px;
+    margin: 15px auto;
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  main .company .bg_image h1 {
+    padding: 15px 50px 15px 50px;
+    font-size: 25px;
+  }
+  main .company .bg_image .position {
+    padding: 0px 50px 20px 50px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .slider .slider_1 {
+    padding: 25px 108px 0px 55px;
+  }
+
+  footer .footer_lists .footer_list input {
+    width: 120px;
+  }
+  footer .footer_lists .footer_list .social img {
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .slider .slider_1 {
+    padding: 12px 108px 0px 40px;
+  }
+  main .company .bg_image h1 {
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+  }
+  main .company .bg_image h1 span {
+    font-size: 6px;
+  }
+  main .company .bg_image .position {
+    padding: 5px 15px 5px 15px;
+  }
+}
