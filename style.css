@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background: #000;
+}
+
 header nav {
   position: fixed;
   background: #000;
@@ -174,11 +178,15 @@ main .snowboards .sl_carousel_snow .sl_slide .sl_img {
   padding-bottom: 20px;
 }
 main .snowboards .sl_carousel_snow .sl_slide .sl_text {
+  padding: 15px 0px 15px 0px;
   font-family: "Advent Pro", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+main .snowboards .sl_carousel_snow .sl_slide:not(.slick-current) > .sl_text {
+  display: none;
 }
 main .company {
   background-image: url("image/bg_image.jpg");
