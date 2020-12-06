@@ -7,10 +7,6 @@ body {
   background: #000;
 }
 
-.lock {
-  overflow: hidden;
-}
-
 header nav {
   position: fixed;
   background: #000;
@@ -24,23 +20,23 @@ header nav .checkbtn {
   font-size: 20px;
   color: #fff;
   float: right;
-  margin: 25px 50px 0 0;
+  line-height: 110px;
+  margin-right: 50px;
   cursor: pointer;
   display: none;
 }
 header nav .logo {
-  padding: 8px 35px 8px 80px;
+  padding: 21px 35px 34px 80px;
   float: left;
 }
-header nav .ul_checkbtn {
+header nav ul {
   float: left;
-  margin-top: 8px;
 }
-header nav .ul_checkbtn li {
+header nav ul li {
   display: inline-block;
-  padding: 15px 0px 15px 0px;
+  margin: 50px 0px 34px 0px;
 }
-header nav .ul_checkbtn li a {
+header nav ul li a {
   font-family: 'Advent Pro', sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -50,16 +46,16 @@ header nav .ul_checkbtn li a {
   padding: 7px 10px;
   border-radius: 3px;
 }
-header nav .ul_checkbtn li a:hover, header nav .ul_checkbtn li a :active {
+header nav ul li a:hover, header nav ul li a :active {
   background: #1a2a4e;
   -webkit-transition: .5s;
   transition: .5s;
   color: #42768f;
 }
-header nav .ul_checkbtn .search {
+header nav ul .search {
   margin-left: 480px;
 }
-header nav .ul_checkbtn .search input {
+header nav ul .search input {
   width: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,7 +68,7 @@ header nav .ul_checkbtn .search input {
   font-family: "Advent Pro", sans-serif;
   font-weight: 300;
 }
-header nav .ul_checkbtn .search span {
+header nav ul .search span {
   margin-right: 80px;
   font-family: "Advent Pro", sans-serif;
   font-size: 13px;
@@ -82,7 +78,7 @@ header nav .ul_checkbtn .search span {
 }
 
 main {
-  padding-top: 72px;
+  padding-top: 110px;
 }
 main .slider {
   background-image: url("image/slider1.jpg");
@@ -337,7 +333,7 @@ footer .region img {
 }
 
 @media screen and (max-width: 1347px) {
-  header nav .ul_checkbtn .search {
+  header nav ul .search {
     margin-left: 380px;
   }
 
@@ -362,7 +358,7 @@ footer .region img {
   }
 }
 @media screen and (max-width: 1236px) {
-  header nav .ul_checkbtn .search {
+  header nav ul .search {
     margin-left: 290px;
   }
 
@@ -377,7 +373,7 @@ footer .region img {
   }
 }
 @media screen and (max-width: 1152px) {
-  header nav .ul_checkbtn .search {
+  header nav ul .search {
     margin-left: 170px;
   }
 
@@ -399,7 +395,7 @@ footer .region img {
   }
 }
 @media screen and (max-width: 1024px) {
-  header nav .ul_checkbtn .search {
+  header nav ul .search {
     margin-left: 48px;
   }
 
@@ -434,26 +430,27 @@ footer .region img {
   }
 }
 @media screen and (max-width: 900px) {
-  header nav #check:checked ~ .ul_checkbtn {
+  header nav #check:checked ~ ul {
     left: 0;
   }
   header nav .checkbtn {
     display: block;
   }
-  header nav .ul_checkbtn {
+  header nav ul {
     z-index: 2;
     position: fixed;
     width: 100%;
     height: 100%;
     background: #1a2a4e;
-    top: 64px;
+    top: 110px;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  header nav .ul_checkbtn li {
+  header nav ul li {
     display: block;
+    margin: 35px 0px 30px 0px;
   }
 
   main .slider .slider_1 {

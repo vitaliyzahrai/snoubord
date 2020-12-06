@@ -7,10 +7,6 @@ body{
 	background: #000;
 }
 
-.lock{
-		overflow: hidden;
-	}
-
 header{
 	nav{
 		position: fixed;
@@ -24,20 +20,20 @@ header{
 			font-size: 20px;
 			color: #fff;
 			float: right;
-			margin: 25px 50px 0 0;
+			line-height: 110px;
+			margin-right: 50px;
 			cursor: pointer;
 			display: none;
 		}
 		.logo{
-			padding: 8px 35px 8px 80px;
+			padding: 21px 35px 34px 80px;
 			float: left;
 		}
-		.ul_checkbtn{
+		ul{
 			float: left;
-			margin-top: 8px;
 			li{
 				display: inline-block;
-				padding: 15px 0px 15px 0px ;
+				margin: 50px 0px 34px 0px ;
 				a{
 					font-family: 'Advent Pro', sans-serif;
 					font-size: 13px;
@@ -82,7 +78,7 @@ header{
 }
 
 main{
-	padding-top: 72px;
+	padding-top: 110px;
 	.slider{
 		background-image: url('image/slider1.jpg');
 		background-size: cover;
@@ -358,7 +354,7 @@ footer{
 
 	header{
 			nav{
-			.ul_checkbtn{
+				ul{
 				.search{
 					margin-left: 380px;
 				}		
@@ -406,7 +402,7 @@ footer{
 
 	header{
 			nav{
-			.ul_checkbtn{
+				ul{
 				.search{
 					margin-left: 290px;
 				}		
@@ -441,7 +437,7 @@ footer{
 
 	header{
 			nav{
-			.ul_checkbtn{
+				ul{
 				.search{
 					margin-left: 170px;
 				}		
@@ -488,7 +484,7 @@ footer{
 
 	header{
 			nav{
-			.ul_checkbtn{
+				ul{
 				.search{
 					margin-left: 48px;
 				}		
@@ -547,24 +543,25 @@ footer{
 
 	header{
 		nav{
-			#check:checked ~ .ul_checkbtn{
+			#check:checked ~ ul{
 				left: 0;
 			}
 			.checkbtn{
 				display: block;
 			}
-			.ul_checkbtn{
+			ul{
 				z-index: 2;
 				position: fixed;
 				width: 100%;
 				height: 100%;
 				background: #1a2a4e;
-				top: 64px;
+				top: 110px;
 				left: -100%;
 				text-align: center;
 				transition: all .5s;
 				li{
 					display: block;
+					margin: 35px 0px 30px 0px;
 				}
 			}	
 		}
