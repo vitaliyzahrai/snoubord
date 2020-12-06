@@ -39,3 +39,11 @@ $('.sl_carousel_snow').slick({
   ]
 
 });
+
+
+$(document).ready(function(){
+  $('.checkbtn').click(function(event) {
+    $('.checkbtn,.ul_checkbtn').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});
