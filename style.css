@@ -432,6 +432,8 @@ footer .region img {
 @media screen and (max-width: 900px) {
   .lock {
     overflow: hidden;
+    -ms-touch-action: none;
+        touch-action: none;
   }
 
   header nav #check:checked ~ .ul_checkbtn {
