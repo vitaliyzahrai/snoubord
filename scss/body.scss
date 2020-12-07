@@ -7,10 +7,6 @@ body{
 	background-color: #000;
 }
 
-.lock{
-		overflow: hidden;
-	}
-
 header{
 	nav{
 		position: fixed;
@@ -34,7 +30,7 @@ header{
 		}
 		.ul_checkbtn{
 			float: left;
-			margin-top: 8px;
+			padding-top: 8px;
 			li{
 				display: inline-block;
 				padding: 15px 0px 15px 0px ;
@@ -193,7 +189,7 @@ main{
 					color: #000000;
 					text-transform: uppercase;
 					}
-					&:not(.slick-current)>.sl_text{
+					&:not(.slick-center)>.sl_text{
 						display: none;
 				}
 			}
@@ -545,6 +541,10 @@ footer{
 
 @media screen and (max-width: 900px){
 
+	.lock{
+		overflow: hidden;
+	}
+
 	header{
 		nav{
 			#check:checked ~ .ul_checkbtn{
@@ -556,13 +556,13 @@ footer{
 			.ul_checkbtn{
 				z-index: 2;
 				position: fixed;
-				width: 100%;
+				width: 70%;
 				height: 100%;
 				background: #1a2a4e;
-				top: 64px;
+				top: 72px;
 				left: -100%;
 				text-align: center;
-				transition: all .5s;
+				transition: all .8s;
 				li{
 					display: block;
 				}
@@ -587,8 +587,8 @@ footer{
 		.snowboards{
 			.sl_carousel_snow{
 				.sl_slide{
-					.sl_text{
-						
+					&:not(.slick-current)>.sl_text{
+						display: none;
 					}
 				}
 				
@@ -669,11 +669,26 @@ footer{
 
 }
 
+	@media screen and (max-width: 739px){
+		main{
+			.snowboards{
+				.sl_carousel_snow{
+					.sl_slide{
+							&:not(.slick-active)>.sl_text{
+								display: none;
+						}
+							&:not(.slick-center)>.sl_text{
+							display: block;
+						}
+					}
+				}
+			}	
+		}	
+	}		
 
 @media screen and (max-width: 620px){
 
 	main{
-
 		.slider{
 			.slider_1{
 				padding: 45px 212px 0px 125px;
@@ -733,8 +748,16 @@ footer{
 
 
 @media screen and (max-width: 500px){
-	main{
+	
+	header{
+		nav{
+			.ul_checkbtn{
+				width: 100%;
+			}	
+		}
+	}
 
+	main{
 		.slider{
 			.slider_1{
 				padding: 46px 143px 0px 85px;

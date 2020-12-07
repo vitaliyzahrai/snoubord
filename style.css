@@ -7,10 +7,6 @@ body {
   background-color: #000;
 }
 
-.lock {
-  overflow: hidden;
-}
-
 header nav {
   position: fixed;
   background: #000;
@@ -34,7 +30,7 @@ header nav .logo {
 }
 header nav .ul_checkbtn {
   float: left;
-  margin-top: 8px;
+  padding-top: 8px;
 }
 header nav .ul_checkbtn li {
   display: inline-block;
@@ -189,7 +185,7 @@ main .snowboards .sl_carousel_snow .sl_slide .sl_text {
   color: #000000;
   text-transform: uppercase;
 }
-main .snowboards .sl_carousel_snow .sl_slide:not(.slick-current) > .sl_text {
+main .snowboards .sl_carousel_snow .sl_slide:not(.slick-center) > .sl_text {
   display: none;
 }
 main .company {
@@ -434,6 +430,10 @@ footer .region img {
   }
 }
 @media screen and (max-width: 900px) {
+  .lock {
+    overflow: hidden;
+  }
+
   header nav #check:checked ~ .ul_checkbtn {
     left: 0;
   }
@@ -443,14 +443,14 @@ footer .region img {
   header nav .ul_checkbtn {
     z-index: 2;
     position: fixed;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background: #1a2a4e;
-    top: 64px;
+    top: 72px;
     left: -100%;
     text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .8s;
+    transition: all .8s;
   }
   header nav .ul_checkbtn li {
     display: block;
@@ -464,6 +464,9 @@ footer .region img {
   }
   main .slider .slider_1 button {
     margin: 40px 0px 100px 285px;
+  }
+  main .snowboards .sl_carousel_snow .sl_slide:not(.slick-current) > .sl_text {
+    display: none;
   }
   main .snowboards .sl_carousel_snow .slick-prev {
     padding-top: 190px;
@@ -516,6 +519,14 @@ footer .region img {
     padding: 0px 130px 20px 125px;
   }
 }
+@media screen and (max-width: 739px) {
+  main .snowboards .sl_carousel_snow .sl_slide:not(.slick-active) > .sl_text {
+    display: none;
+  }
+  main .snowboards .sl_carousel_snow .sl_slide:not(.slick-center) > .sl_text {
+    display: block;
+  }
+}
 @media screen and (max-width: 620px) {
   main .slider .slider_1 {
     padding: 45px 212px 0px 125px;
@@ -556,6 +567,10 @@ footer .region img {
   }
 }
 @media screen and (max-width: 500px) {
+  header nav .ul_checkbtn {
+    width: 100%;
+  }
+
   main .slider .slider_1 {
     padding: 46px 143px 0px 85px;
   }
