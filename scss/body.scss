@@ -148,7 +148,6 @@ main{
 			}
 			.slick-prev{
 				left: 30px;
-				opacity: 0.3;
 				background: url('image/prev.png');
 				top: 42%;
     		background-size: cover;
@@ -156,12 +155,11 @@ main{
     		padding-top: 220px;
     		padding-left: 120px;
 				&:active{
-					opacity: 0.8;
+					opacity: 0.4;
 				}
 			}
 			.slick-next{
 				right: 30px;
-				opacity: 0.3;
 				top: 42%;
 				background: url('image/next.png');
 				background-size: cover;
@@ -169,7 +167,7 @@ main{
 				padding-top: 220px;
 				padding-right: 120px;
 				&:active{
-					opacity: 0.8;
+					opacity: 0.4;
 				}
 			}
 			.slick-prev::before,.slick-next::before{
@@ -177,12 +175,13 @@ main{
 			}
 
 			.sl_slide{
+				opacity: 0.4;
+				text-align: center;
 				.sl_img{
 					margin: 0px auto;
-					padding-bottom: 20px;
+					padding: 0 74px 20px 74px;
 				}
 				.sl_text{
-					padding: 15px 0px 15px 0px;
 					font-family: "Advent Pro", sans-serif;
 					font-size: 24px;
 					font-weight:700;
@@ -193,6 +192,9 @@ main{
 						display: none;
 				}
 			}
+			.slick-center{
+					opacity: 1;
+				}
 		}
 	}
 
@@ -253,13 +255,19 @@ main{
 					}
 				}
 				.desc{
-					font-family: "Advent Pro", sans-serif;
-					font-size: 14px;
-					font-weight:400;
-					color: #000000;
-					text-align: left;
-					margin: 25px auto;
-					line-height: 2;
+					a{
+						font-family: "Advent Pro", sans-serif;
+						font-size: 14px;
+						font-weight:400;
+						color: #000;
+						text-align: left;
+						margin: 25px auto;
+						line-height: 2;
+						text-decoration: none;
+						&:hover {
+							color: #42768f;
+						}
+					}
 				}
 			}
 		}
@@ -321,8 +329,14 @@ footer{
 			.social{
 				width: 250px;
 				padding-top: 60px;
-				img{
-					padding-right: 28px;
+				text-align: center;
+				i{
+					padding: 0 13px;
+					color: #fff;
+					font-size: 22px;
+					&:hover {
+						color: #42768f;
+					}
 				}
 			}
 		}
@@ -543,7 +557,6 @@ footer{
 
 	.lock{
 		overflow: hidden;
-    touch-action: none;
 	}
 
 	header{
@@ -587,12 +600,6 @@ footer{
 
 		.snowboards{
 			.sl_carousel_snow{
-				.sl_slide{
-					&:not(.slick-current)>.sl_text{
-						display: none;
-					}
-				}
-				
 				.slick-prev{
 					padding-top: 190px;
 		    	padding-left: 100px;
@@ -669,23 +676,7 @@ footer{
 	}
 
 }
-
-	@media screen and (max-width: 739px){
-		main{
-			.snowboards{
-				.sl_carousel_snow{
-					.sl_slide{
-							&:not(.slick-active)>.sl_text{
-								display: none;
-						}
-							&:not(.slick-center)>.sl_text{
-							display: block;
-						}
-					}
-				}
-			}	
-		}	
-	}		
+	
 
 @media screen and (max-width: 620px){
 
@@ -705,12 +696,16 @@ footer{
 		}
 		
 		.snowboards{
-			.sl_text{
-				font-size: 18px;
-			}
 			.snowboard{
 				h1{
 					font-size: 36px;
+				}
+			}
+			.sl_carousel_snow{
+				.sl_slide{
+					.sl_text{
+						font-size: 18px;
+					}
 				}
 			}
 		}
@@ -857,8 +852,8 @@ footer{
 					width: 120px;
 				}
 				.social{
-					img{
-						padding-right: 15px;
+					i{
+						padding: 0 8px;
 					}
 				}
 			}
